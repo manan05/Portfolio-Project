@@ -149,3 +149,189 @@ span{
   content: '';
   margin-top: 8px;
 }
+
+/* Adding functionality to Hamburger Menu with CSS*/
+
+#menu-toggle:checked + .menu-button-container .menu-button::before{
+  margin-top: 0px;
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button{
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-45deg);  /* Transforms the hamburger icon into a cross*/
+}
+
+/*Styling the hero section*/
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  height: calc(100% - 65px);
+  align-items: center;
+  background-color: #eae4d7;
+}
+
+/* Styling the hero image*/
+
+.hero .image{
+  flex: 1 1 30rem;
+}
+
+.hero.image img{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  animation: float 3s linear infinite;
+}
+
+/* Animating the main image*/
+
+@keyframes float {
+  0%,
+  100%{
+    transform: translateY(0rem);
+  }
+  50%{
+    transform: translateY(3rem);
+  }
+}
+
+/* Styling the buttons for the hero and about section */
+
+button {
+  background-color: transparent;
+  color: #195cc8;
+  text-decoration: none;
+  border: 2px solid black;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.btn1, .btn2{
+  margin: 1rem;
+}
+
+.btn1 {
+  background-color: #195cc8;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Hero content hero section*/
+.herocontent{
+  margin: auto;
+}
+
+.hero .herocontent {
+  flex: 1 1 40rem;
+}
+
+h1{
+  color: black;
+  margin: 20px 0px 20px;
+  font-size: 80px;
+  font-family: 'Fraunces', serif;
+  letter-spacing: 2px;
+}
+
+.surname {
+  font-family: 'Fraunces', serif;
+}
+
+h2{
+  color: black;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+h3{
+  font-size: 30px;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.tag2{
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.hero p{
+  font-size: 25px;
+}
+
+
+/* Styling the About Me section*/
+
+.about {
+  width: 100%;
+  height: 100vh;
+  padding: 150px 0px;
+  background-color: #e8e9e3;
+}
+
+.about img{
+  height: auto;
+  width: 430px;
+  border-radius: 30px;
+  box-shadow: rgba(26, 24, 24, 0.25) 0px 5px 10px 2px;
+}
+
+.about-text{
+  width: 550px;
+}
+
+
+/* About container*/
+
+.main{
+  width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h2{
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #195cc8;
+  font-family: 'Fraunces', serif;
+}
+
+.about-text h5{
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: black;
+  font-family: 'Frances', serif;
+}
+
+.about-text p{
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
