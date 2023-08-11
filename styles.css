@@ -3,6 +3,8 @@
 
 /* Basic Css */
 
+
+
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -168,6 +170,24 @@ span{
 
 /*Styling the hero section*/
 
+.wave{
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  animation-name: wave-animation;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(45.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(45.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(10.0deg) }
+ 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+100% { transform: rotate( 0.0deg) }
+}
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -255,7 +275,7 @@ h1{
 h2{
   color: black;
   font-size: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 1px;
 }
 
 h4 {
@@ -267,6 +287,7 @@ h3{
   font-size: 30px;
   color: black;
   letter-spacing: 2px;
+  padding-bottom: 20px;
 }
 
 .tag2{
