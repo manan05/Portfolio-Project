@@ -311,7 +311,7 @@ h3{
 
 .about img{
   height: auto;
-  width: 300px;
+  /* width: auto; */
   border-radius: 30px;
   box-shadow: rgba(26, 24, 24, 0.25) 0px 5px 10px 2px;
 }
