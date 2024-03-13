@@ -1,385 +1,961 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manan - Personal Portfolio</title>
 
-<head>
-    <title>Manan Arora</title>
-    <!-- Include this CDN for using icons -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-</head>
+    <!--
+        Google fonts stylesheet
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div class="main-container">
-        <!-- header section -->
-        <header>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body class="dark_theme">
+    <!--Header-->
 
-            <section class="nav">
-                <!-- We can also insert any logo here -->
+    <header class="header active">
+      <div class="container">
+        <h1 class="h1 logo">
+          <a href="#">Manan <span>.</span></a>
+        </h1>
 
-                <div class="logo">
-                    <h2 class="logo">Ma<span>nan</span></h2>
+        <div class="navbar-actions">
+          <button
+            class="theme-btn"
+            aria-label="Change Theme"
+            title="Change Theme"
+            data-theme-btn
+          >
+            <span class="icon"></span>
+          </button>
+        </div>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle Menu"
+          title="Toggle Menu"
+          data-nav-toggle-btn
+        >
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link">Home.</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link">About.</a>
+            </li>
+
+            <li>
+              <a href="#experience" class="navbar-link">Experience.</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link">Skills.</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="navbar-link">Portfolio.</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact.</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="container">
+        <!--
+          HERO SECTION
+        -->
+
+        <section class="hero" id="home">
+          <figure class="hero-banner">
+            <picture>
+              <!--To be edited-->
+              <source
+                media="(min-width: 768px)"
+                srcset="assets/images/manan-image.jpeg"
+              />
+              <source
+                media="(min-width: 500px)"
+                srcset="assets/images/manan-image.jpeg"
+              />
+              <img
+                src="assets/images/manan-image.jpeg"
+                alt="Picture of Manan Arora"
+                class="w-100"
+              />
+            </picture>
+          </figure>
+
+          <div class="hero-content">
+            <h2 class="h2 hero-title">Software Engineer</h2>
+
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+          </div>
+          <ul class="hero-social-list">
+            <li>
+              <a
+                href="https://github.com/manan05"
+                class="hero-social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+
+                <div class="tooltip">Github</div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/manan05/"
+                class="hero-social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+                <div class="tooltip">Linkedin</div>
+              </a>
+            </li>
+          </ul>
+          <a href="#stats" class="scroll-down">Scroll</a>
+        </section>
+
+        <!-- 
+        - #STATS
+      -->
+
+        <section class="stats" id="stats">
+          <ul class="stats-list">
+            <li>
+              <a href="#" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-1.png"
+                    alt="Badge icon"
+                  />
                 </div>
 
-                <!-- checkbox to control icon's state-->
-                <input id="menu-toggle" type="checkbox" />
-                <label class="menu-button-container" for="menu-toggle">
-                    <div class="menu-button"></div>
-                </label>
+                <h2 class="h2 card-title">
+                  MS CS<strong>University of Texas at Arlington</strong>
+                </h2>
 
-                <!-- Main Menu-->
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
 
-                <ul class="menu">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#Certi">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </section>
-        </header>
-        <!-- header section end-->
+            <li>
+              <a href="#" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/stats-card_icon-2.png"
+                    alt="Checkmark icon"
+                  />
+                </div>
 
+                <h2 class="h2 card-title">
+                  2+ YOE<strong> Ex-Accenture <br />Ex-Ezyschooling</strong>
+                </h2>
 
-        <!-- Hero section starts-->
-        <section class="hero" id="hero">
-            <div class="herocontent">
-                <h4>Hi There!<span class="wave" role="img" aria-labelledby="wave">
-                        <h3>👋</h3>
-                    </span>
-                </h4>
-                <h2>I'm <span class="surname">MANAN ARORA</span></h2>
-                <h3><span class="span2">Software</span><span class="span2"> Developer</span></h3>
-
-                <button class="btn1">Hire Me</button>
-                <button class="btn2">Resume
-                    <i class="bi bi-download"></i>
-
-                </button>
-            </div>
-
-            <div class="image">
-                <img src="images/hero-image.jpg" alt=" " height="auto" width="100%">
-            </div>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
         </section>
-        <!-- Hero section end-->
 
+        <!-- - #ABOUT -->
 
-        <!-- About section starts -->
         <section class="about" id="about">
+          <figure class="about-banner">
+            <img
+              src="./assets/images/hero-image.jpg"
+              alt="Manan in his natural habitat"
+              class="w-100"
+            />
+          </figure>
 
+          <div class="about-content section-content">
+            <p class="section-subtitle">About me</p>
 
-            <div class="main">
-                <!-- <img src="images/about-me.jpg" alt="About IMG - Professional"> -->
+            <h2 class="h3 section-title">A passionate Software Engineer</h2>
+            <ul class="section-text">
+              <li>
+                🎓 I'm Manan Arora, currently pursuing my Master's in Computer
+                Science at UTA. Coding is my jam, and I'm all about tackling
+                tech challenges head-on! 💻
+              </li>
+              <br />
+              <li>
+                🚀 My journey into the tech world started during my undergrad
+                days, where my love for coding blossomed. Now, I'm diving deeper
+                into the realm of Computer Science to hone my skills and
+                knowledge 🔍
+              </li>
+              <br />
+              <li>
+                🌟 I'm open for a Summer and Fall 24 internships that offers the
+                perfect blend of learning and growth. Tech companies and
+                startups, I'm ready to bring my passion and skills to the table!
+                🎯
+              </li>
+              <br />
+              <li>
+                💡 When I'm not coding, you'll find me hitting the gym or
+                immersed in the world of video games. Balancing work and play
+                keeps me motivated and energized! 💪🎮
+              </li>
+            </ul>
 
-                <img src="images/about-me.jpg" alt="About IMG - Professional">
+            <div class="btn-group">
+              <button class="btn btn-secondary" onclick="scrollToContact()">
+                HIRE ME
+              </button>
 
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <h5>Software Developer</h5>
-                    <p>I'm a Computer Science enthusiast currently pursuing my Master's in Computer Science
-                        at UT Arlington. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly
-                        solutions that solve real-world problems. Explore my
-                        portfolio to see how I can bring innovation to your projects!
-                        <br>
-                        <br>
-
-                    </p>
-                    <button type="button">Let's Talk</button>
-                </div>
+              <button class="btn btn-primary" onclick="downloadResume()">
+                Download cv
+              </button>
             </div>
+          </div>
         </section>
-        <!-- About section end -->
 
+        <!--RELEVANT EXPERIENCE-->
 
-        <!-- Skills section start -->
+        <section class="experience" id="experience">
+          <div class="experience-content section-content">
+            <p class="section-subtitle">Experience</p>
+            <div>
+              <h2 class="h3 experience-title">
+                Application Development Associate,
+                <font color="#E38444">Accenture</font>
+              </h2>
+
+              <ul class="section-text">
+                <li>
+                  • Led the initiative to revamp landing pages, implementing
+                  responsive design for a Fortune 500 mining client, thus
+                  reducing reported bugs by 50%; instrumental in achieving a 20%
+                  decrease in bounce rate
+                </li>
+                <li>
+                  • Defined and engineered a query in SAP HCM Query Manager
+                  tailored to retrieve the personnel administration data based
+                  on the client’s needs, reducing 100% of the manual data entry
+                  workload and enhancing the data accuracy
+                </li>
+                <li>
+                  • Implemented critical ChaRM enhancement requests as a
+                  functional lead for a Fortune 500 mining client, delivering
+                  promptly on multiple time-sensitive requests
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="h3 experience-title">
+                Android Developer Intern,
+                <font color="#E38444">Ezyschooling</font>
+              </h2>
+
+              <ul class="section-text">
+                <li>
+                  • Collaborated effectively with a team of two to design and
+                  develop landing screens for the parenting section of the
+                  Android application, resulting in a 20% increase in user
+                  engagement
+                </li>
+                <li>
+                  • Developed a face recognition and mask detection model with a
+                  96% accuracy rate in identifying masked faces within the
+                  attendance management application
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- 
+        - #SKILLS
+      -->
+
         <section class="skills" id="skills">
-            <div class="max-width">
-                <h2 class="title">Key Skills</h2>
-                <div class="skills-content">
-                    <div class="column right">
-                        <div class="bars">
-                            <div class="info">
-                                <span class="headbar">HTML5, CSS3, Bootstrap</span>
-                            </div>
+          <div class="skills-content section-content">
+            <p class="section-subtitle">My skills</p>
 
-                            <div class="progressBar">
-                                <div class="line mern"></div>
-                            </div>
-                        </div>
+            <h2 class="h3 section-title">
+              What My Programming Skills include?
+            </h2>
 
-                        <div class="bars">
-                            <div class="info">
-                                <span class="headbar">Javascript(ES6)</span>
-                            </div>
+            <p class="section-text">
+              I am an avid learner and am fond of learning different
+              technologies including
+              <strong>Web Developement</strong>,
+              <strong>Android Development</strong>,
+              <strong>Machine Learning</strong>, and
+              <strong>Data Analytics</strong>. Some of my top skills and tools
+              are:
+            </p>
 
-                            <div class="progressBar">
-                                <div class="line js"></div>
-                            </div>
-                        </div>
+            <div class="skills-toggle" data-toggle-box>
+              <button class="toggle-btn active" data-toggle-btn>Skills</button>
 
-                        <div class="bars">
-                            <div class="info">
-                                <span class="headbar">Java</span>
-                            </div>
-
-                            <div class="progressBar">
-                                <div class="line java"></div>
-                            </div>
-                        </div>
-
-                        <div class="bars">
-                            <div class="info">
-                                <span class="headbar">Python</span>
-                            </div>
-
-                            <div class="progressBar">
-                                <div class="line py"></div>
-                            </div>
-                        </div>
-
-                        <div class="bars">
-                            <div class="info">
-                                <span class="headbar">Android App Development</span>
-                            </div>
-
-                            <div class="progressBar">
-                                <div class="line android"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <button class="toggle-btn" data-toggle-btn>Tools</button>
             </div>
+          </div>
+
+          <div class="skills-box" data-skills-box>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Java</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Python</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">HTML5</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">CSS3</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">JavaScript</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">TypeScript</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Android</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">C</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">C++</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Kotlin</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">React</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">MySQL</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">ExpressJS</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Apache Spark</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Django</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="tools-list">
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Git</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Github</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">NodeJS</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Postman</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">MongoDB</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Firebase</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Jenkins</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">AWS</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Google Cloud</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Docker</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Kubernetes</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Android Studio</div>
+                  <div class="card-icon">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
-        <!-- Skills section end-->
 
-        <!--Projects section start-->
+        <!-- 
+        - #PROJECTS
+      -->
 
-        <div class="service" id="projects">
-            <div class="title">
-                <h2 class="project-heading">Projects</h2>
-            </div>
+        <section class="project" id="portfolio">
+          <ul class="project-list">
+            <li>
+              <div class="project-content section-content">
+                <p class="section-subtitle">My Works</p>
 
-            <div class="box">
-                <div class="card">
-                    <h5>Image Captioning (Deep Learning)</h5>
-                    <div class="pra">
-                        <p>Developed and deployed a deep learning model using the InceptionV3 architecture that
-                            generates captions for an input image, achieving an average BLEU score of 0.66</p>
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
+                <h2 class="h3 section-title">
+                  See My Works Which Will Amaze You!
+                </h2>
+              </div>
+            </li>
+
+            <li>
+              <a
+                href="https://github.com/manan05/DataPrep"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/dataprep.jpg"
+                    class="w-100"
+                    alt="DataPrep-image"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title"><strong>DataPrep</strong></h3>
+                  <p class="card-desc">Cloud Native Web Application</p>
+                  <time class="publish-date" datetime="2023-12">2023</time>
                 </div>
+              </a>
+            </li>
 
-                <div class="card">
-                    <h5>Vehicle Analyzer (Deep Learning)</h5>
-                    <div class="pra">
-                        <p>Designed a deep learning model to track the movement of the vehicles in the video frames
-                            using background subtraction methods, surpassing the accuracy of conventional virtual
-                            detector</p>
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
+            <li>
+              <a
+                href="https://github.com/manan05/FileSystem"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/folder-files11.jpg"
+                    class="w-100"
+                    alt="FileSystem image"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <strong>Distributed File & Computation Service</strong>
+                  </h3>
+                  <p class="card-desc">File System using gRPC</p>
+                  <time class="publish-date" datetime="2023-12">2023</time>
                 </div>
+              </a>
+            </li>
 
-                <div class="card">
-                    <h5>Shopping Bucket (Android Studio)</h5>
-                    <div class="pra">
-                        <p>Designed and developed an Android application for customizing shopping lists, including key
-                            features like login, registration, and making real-time updates to the list’s data using
-                            firebase</p>
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
+            <li>
+              <a
+                href="https://github.com/manan05/"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/image-captioning.png"
+                    class="w-100"
+                    alt="image-captioning-"
+                    height="200px"
+                    width="100px"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <strong>Image Captioning</strong>
+                  </h3>
+                  <p class="card-desc">Deep Learning</p>
+                  <time class="publish-date" datetime="2023-12">2021</time>
                 </div>
+              </a>
+            </li>
 
-                <div class="card">
-                    <h5>Weather App (Android Studio)</h5>
-                    <div class="pra">
-                        <p>Developed a single-page application that displays the user's current temperature, weather
-                            status, and additional weather details. Leveraged the openweathermap.org API to retrieve
-                            weather information.</p>
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
+            <li>
+              <a
+                href="https://github.com/manan05/ShoppingBucket"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/shopping-bucket.png"
+                    class="w-100"
+                    alt="DataPrep-image"
+                    height="285px"
+                    width="100px"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <strong>Shopping Bucket</strong>
+                  </h3>
+                  <p class="card-desc">Android Application</p>
+                  <time class="publish-date" datetime="2023-12">2020</time>
                 </div>
-            </div>
-        </div>
+              </a>
+            </li>
 
+            <!-- <li>
+              <a
+                href="https://github.com/manan05/DataPrep"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/dataprep.jpg"
+                    class="w-100"
+                    alt="DataPrep-image"
+                  />
+                </figure>
 
-        <!-- Experience section start-->
-        <section class="CV-page" id="experience">
-            <div class="CV-grid">
-                <div class="CV-jobs">
-                    <h2 class="CV-secondaryHeading CV-jobs-heading">Relevant Experience</h2>
-                    <section class="CV-timeline CV-job">
-
-                        <!-- Experience 1-->
-                        <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">Application Development
-                                Associate</span> &#8211; <span class="CV-timeline-heading-location">Accenture, India
-                            </span> <small class="CV-timeline-heading-duration"> September 2021 - June 2023</small>
-                        </h3>
-                        <ul class="CV-timeline-details">
-                            <li>Collaborated as a functional lead with three teams for an enhancement ChaRM to deliver a
-                                high priority change for a fortune 500 mining client</li>
-                            <li>Designed knowledge base to enhance the team’s understanding of PAOM module in SAP Human
-                                Capital Management thus streamlining the onboarding process for new recruits</li>
-                            <li>Acted as a functional lead in spearheading the SAP HRSP Refresh for 3 quarters from PAOM
-                                module</li>
-                        </ul>
-                    </section>
-
-                    <section class="CV-timeline CV-job">
-                        <!-- Experience 2-->
-                        <h3 class="CV-timeline-heading"><span class="CV-timeline-heading-title">Android Developer
-                                Intern</span> &#8211; <span class="CV-timeline-heading-location">Ezyschooling,
-                                India</span> <small class="CV-timeline-heading-duration">May 2020 - June 2020</small>
-                        </h3>
-
-                        <ul class="CV-timeline-details">
-                            <li>Collaborated with a team of 2 and designed User Interface elements of the parenting
-                                section in the android application</li>
-                            <li>Fetched articles, discussions, users’ data from APIs to the fronted of the application
-                                with Retrofit, type-safe REST client for Android</li>
-                            <li>Designed and developed single pages like ‘about us’ and ‘contact us’ in the application
-                            </li>
-                            <li>Instituted face recognition and mask detection model to recognize masked faces;
-                                integrated it within the user interface of the
-                                attendance management application</li>
-                        </ul>
-                    </section>
-
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <strong>update- DataPrep</strong>
+                  </h3>
+                  <p class="card-desc">Cloud Native Web Application</p>
+                  <time class="publish-date" datetime="2023-12"
+                    >December 2023</time
+                  >
                 </div>
-            </div>
+              </a>
+            </li> -->
+
+            <!-- <li>
+              <a
+                href="https://github.com/manan05/DataPrep"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/dataprep.jpg"
+                    class="w-100"
+                    alt="DataPrep-image"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <strong>update- DataPrep</strong>
+                  </h3>
+                  <p class="card-desc">Cloud Native Web Application</p>
+                  <time class="publish-date" datetime="2023-12"
+                    >December 2023</time
+                  >
+                </div>
+              </a>
+            </li> -->
+
+            <!-- <li>
+              <a
+                href="https://github.com/manan05/DataPrep"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/dataprep.jpg"
+                    class="w-100"
+                    alt="DataPrep-image"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">
+                    <strong>update- DataPrep</strong>
+                  </h3>
+                  <p class="card-desc">Cloud Native Web Application</p>
+                  <time class="publish-date" datetime="2023-12"
+                    >December 2023</time
+                  >
+                </div>
+              </a>
+            </li> -->
+
+            <li>
+              <button class="load-more" onclick="redirectToGithub()">
+                More projects to be added soon. Until then you can checkout my
+                Github!
+              </button>
+            </li>
+          </ul>
         </section>
 
-        <!-- Experience section end-->
+        <!-- 
+        - #CONTACT
+      -->
 
-
-        <!-- Publication and Certification section start-->
-        <div class="service" id="Certi">
-            <div class="title">
-                <h2 class="project-heading">Publication and Certification</h2>
-            </div>
-
-            <div class="box">
-                <div class="card">
-                    <i class="fas fa-bars"></i>
-                    <h5>Vehicle Analysis Techniques</h5>
-                    <div class="pra">
-                        <p>Published research paper titled “Vehicle Analysis Techniques” in IJSREM (Volume: 05 Issue: 01
-                            – 2021)</p>
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <i class="fas fa-bars"></i>
-                    <h5>Image Captioning Techniques</h5>
-                    <div class="pra">
-                        <p>Published research paper titled “Image Captioning Techniques” in IJSREM (Volume: 05 Issue: 06
-                            –
-                            2021)</p>
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <i class="fas-fa-bars"></i>
-                    <h5>Java Programming</h5>
-                    <div class="pra">
-                        <p>Core Java certification from Coding Blocks (2018)</p>
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <i class="fas-fa-bars"></i>
-                    <h5>Modern Web Development using ReactJS</h5>
-                    <div class="pra">
-                        <p>3 week industrial training on JavaScript and ReactJS by Brain Mentors pvt ltd (2019)</p>
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <i class="fas-fa-bars"></i>
-                    <h5>Android App Development</h5>
-                    <div class="pra">
-                        <p>Android App Development training and certification from Coding Blocks during industrial
-                            training
-                            semester (2020)</p>
-                        <p style="text-align: center;">
-                            <a class="button" href="#">Read More</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Publication and Certification section ends-->
-
-
-        <!-- Contact us section starts-->
         <section class="contact" id="contact">
-            <h2 class="contactTitle">Contact Me</h2>
-            <div class="container ContactUs">
-                <div class="contact-box">
-                    <div class="left contactLeft">
-                        <img src="images/contact-me.jpg" class="contact-img" alt="" width="150px"></img>
+          <div class="contact-content section-content">
+            <p class="section-subtitle">Contact</p>
 
-                        <div class="contact-info">
-                            <p><i class="bi bi-telephone-fill"></i> +91 9013283945</p>
-                            <p><i class="bi bi-envelope-fill"></i> mananarora313@gmail.com</p>
-                            <p><i class="bi bi-geo-alt-fill"></i>Arlington, TX - USA</p>
-                        </div>
+            <h2 class="h3 section-title">Feel free to send me a message</h2>
 
-                        <p class="contact-content"> If you have any queries at all, please feel free to reach out and
-                            I'll gladly answer them.</p>
-                        <p class="contact-content"> Thanks for visiting </p>
-                    </div>
+            <p class="section-text">
+              You can reach out to me on LinkedIn or send me an email and I'll
+              be in touch as soon as possible!
+            </p>
 
-                    <div class="right contactRight">
-                        <h2 class="contacth2"> Let's Connect</h2>
-                        <form>
-                            <input type="text" class="field contactField" placeholder="Enter your Full Name" required />
-                            <input type="email" class="field contactField" placeholder="Enter your Email" required />
-                            <input type="text" class="field contactField" placeholder="Enter your Phone Number" />
-                            <textarea name="msg" placeholder="Suggestion/Queries"
-                                class="field contactField contactTextarea" required></textarea>
-                            <button class="btn contactBtn" type="submit">Send</button>
-                        </form>
-                    </div>
+            <ul class="contact-list">
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="location-outline"></ion-icon>
                 </div>
-            </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Address:</h3>
+
+                  <address class="contact-info">
+                    404 East Border Street, Arlington, Texas 76010
+                  </address>
+                </div>
+              </li>
+
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Phone:</h3>
+
+                  <a href="tel:01234567789" class="contact-info"
+                    >(+1) 682-374-4294</a
+                  >
+                </div>
+              </li>
+
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Email:</h3>
+
+                  <a href="mailto:mxa3328@mavs.uta.edu" class="contact-info"
+                    >mxa3328@mavs.uta.edu</a
+                  >
+
+                  <a href="mailto:mananaroraUTA@gmail.com" class="contact-info"
+                    >mananaroraUTA@gmail.com</a
+                  >
+                </div>
+              </li>
+
+              <li>
+                <ul class="contac-social-list">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/manan05/"
+                      class="contact-social-link"
+                      target="_blank"
+                    >
+                      <div class="tooltip">LinkedIn</div>
+
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://github.com/manan05"
+                      class="contact-social-link"
+                      target="_blank"
+                    >
+                      <div class="tooltip">Github</div>
+
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </section>
+      </article>
+    </main>
 
-        <br>
-        <!-- Footer-->
-        <section id="lab_social_icon_footer">
-            <div class="container">
-                <a href=""><i class="bi bi-github social"></i></a>
-                <a href=""><i class="bi bi-linkedin social"></i></a>
-                <a href=""><i class="bi bi-whatsapp social"></i></a>
-                <a href="mailto:mananarora313@gmail.com"><i class="bi bi-envelope social"></i></a>
+    <!-- 
+    - #FOOTER
+  -->
 
-                <p class="footertext">© @MananArora</p>
-            </div>
-        </section>
-    </div>
-</body>
+    <footer class="footer">
+      <div class="container">
+        <p class="h1 logo">
+          <a href="#"> Manan<span>.</span> </a>
+        </p>
 
+        <p class="copyright">
+          &copy;2024
+          <a href="https://github.com/manan05" target="_blank">mananarora</a>.
+          All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top title="Go to Top">
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <!--Scripts import-->
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
