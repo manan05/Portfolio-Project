@@ -50,7 +50,7 @@ const skillsBox = document.querySelector("[data-skills-box]");
 
 for (let i = 0; i < toggleBtns.length; i++) {
   toggleBtns[i].addEventListener("click", function () {
-
+    
     elemToggleFunc(toggleBtnBox);
     for (let i = 0; i < toggleBtns.length; i++) { elemToggleFunc(toggleBtns[i]); }
     elemToggleFunc(skillsBox);
@@ -104,7 +104,7 @@ function scrollToContact() {
 }
 
 function downloadResume() {
-  var resumeLink = "https://drive.google.com/file/d/1VvNcETC76coSBzOqI1jZcnMYnC88VWUF/view?usp=sharing";
+  var resumeLink = "https://drive.google.com/file/d/1mYF-mjbihHpePwSUvMG4GovDGkY0-NdZ/view?usp=sharing";
   window.open(resumeLink, "_blank");
 }
 
