@@ -1,4 +1,8 @@
-# My Web Portfolio 🚀
+# 🌐 Checkout my website 👇
+
+[Visit My Portfolio](http://mananarora.us/)
+
+## My Web Portfolio 🚀
 
 Welcome to my web portfolio! This repository contains the code for my portfolio website showcasing my skills, experience, and projects. 
 
@@ -25,10 +29,6 @@ The portfolio section highlights some of my notable projects. Visitors can explo
 ## 📞 Contact
 
 In the contact section, visitors can find ways to get in touch with me. Whether it's for collaboration opportunities, inquiries, or just to say hello, I'm always open to connecting with like-minded individuals.
-
-## 🌐 Website Link
-
-[Visit My Portfolio](https://manan05.github.io/)
 
 ## 📝 Contributing
 
